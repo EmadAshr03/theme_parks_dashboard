@@ -1,0 +1,15 @@
+theme_parks_env/
+
+env/
+
+.env 
+
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.py[cod]
+
+.ipynb_checkpoints/
+
+data/database.sqlite

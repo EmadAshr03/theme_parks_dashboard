@@ -2,9 +2,9 @@ import sqlite3
 
 def create_tables():
     conn = sqlite3.connect('data/database.sqlite')
-    curser = conn.cursor()
+    cursor = conn.cursor()
 
-    curser.execute('''
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS theme_parks(
             park_id INTEGER PRIMARY KEY,
             park_name TEXT,
@@ -12,7 +12,7 @@ def create_tables():
         )'''
     )
 
-    curser.execute('''
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS queue_time(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         park_id INTEGER,
